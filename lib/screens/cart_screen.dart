@@ -64,7 +64,6 @@ class CartScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // Items list
           Expanded(
             child: ListView.separated(
               padding: const EdgeInsets.all(16.0),
@@ -128,7 +127,6 @@ class CartScreen extends StatelessWidget {
                           ),
                         ),
 
-                        // Quantity Controls
                         Row(
                           children: [
                             IconButton(
@@ -162,7 +160,6 @@ class CartScreen extends StatelessWidget {
             ),
           ),
 
-          // Order Checkout Box
           Container(
             padding: const EdgeInsets.all(20.0),
             decoration: BoxDecoration(
@@ -179,7 +176,6 @@ class CartScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Delivery address preview from profile
                 Row(
                   children: [
                     const Icon(Icons.location_on, color: Colors.deepOrange, size: 20),
@@ -211,7 +207,6 @@ class CartScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
 
-                // Place Order Button
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(

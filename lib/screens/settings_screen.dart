@@ -97,7 +97,6 @@ class SettingsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Appearance Section
             _buildSectionHeader('Appearance & Display', theme),
             Card(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -116,7 +115,6 @@ class SettingsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // Preferences Section
             _buildSectionHeader('Notification & Location', theme),
             Card(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -144,7 +142,6 @@ class SettingsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // Account & Payment
             _buildSectionHeader('Account & Payments', theme),
             Card(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -174,7 +171,6 @@ class SettingsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // Help & Legal
             _buildSectionHeader('Support & Information', theme),
             Card(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -214,7 +210,6 @@ class SettingsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 28),
 
-            // Logout Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(

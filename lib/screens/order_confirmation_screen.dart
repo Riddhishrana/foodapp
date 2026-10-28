@@ -59,7 +59,6 @@ class OrderConfirmationScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Spacer(),
-              // Animated status circle
               Container(
                 width: 110,
                 height: 110,
@@ -95,7 +94,6 @@ class OrderConfirmationScreen extends StatelessWidget {
               ),
               const SizedBox(height: 24),
 
-              // Delivery details card
               Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                 child: Padding(
@@ -173,7 +171,6 @@ class OrderConfirmationScreen extends StatelessWidget {
 
               const Spacer(),
 
-              // Cancel Order button (if active)
               if (!isCancelled) ...[
                 SizedBox(
                   width: double.infinity,
@@ -197,7 +194,6 @@ class OrderConfirmationScreen extends StatelessWidget {
                 const SizedBox(height: 12),
               ],
 
-              // Return Home Button
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(

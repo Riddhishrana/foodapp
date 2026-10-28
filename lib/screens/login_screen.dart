@@ -69,7 +69,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Static Logo Image
                   Center(
                     child: Container(
                       width: 130,
@@ -113,7 +112,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 36),
 
-                  // Email Field
                   TextFormField(
                     controller: _emailController,
                     keyboardType: TextInputType.emailAddress,
@@ -138,7 +136,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 20),
 
-                  // Password Field
                   TextFormField(
                     controller: _passwordController,
                     obscureText: _obscurePassword,
@@ -186,7 +183,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 20),
 
-                  // Login Button
                   ElevatedButton(
                     onPressed: _handleLogin,
                     style: ElevatedButton.styleFrom(
@@ -209,7 +205,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 16),
 
-                  // Register link
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

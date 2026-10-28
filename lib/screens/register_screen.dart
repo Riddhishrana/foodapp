@@ -78,7 +78,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                // Static Logo Image
                 Center(
                   child: Container(
                     width: 110,
@@ -121,7 +120,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 24),
 
-                // Full Name
                 TextFormField(
                   controller: _nameController,
                   decoration: InputDecoration(
@@ -139,7 +137,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Email
                 TextFormField(
                   controller: _emailController,
                   keyboardType: TextInputType.emailAddress,
@@ -158,7 +155,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Phone
                 TextFormField(
                   controller: _phoneController,
                   keyboardType: TextInputType.phone,
@@ -177,7 +173,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Delivery Address
                 TextFormField(
                   controller: _addressController,
                   maxLines: 2,
@@ -196,7 +191,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Password
                 TextFormField(
                   controller: _passwordController,
                   obscureText: _obscurePassword,
@@ -215,7 +209,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Confirm Password
                 TextFormField(
                   controller: _confirmPasswordController,
                   obscureText: _obscurePassword,
@@ -234,7 +227,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 24),
 
-                // Register Button
                 ElevatedButton(
                   onPressed: _handleRegister,
                   style: ElevatedButton.styleFrom(

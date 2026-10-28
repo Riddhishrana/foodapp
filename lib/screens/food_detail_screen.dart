@@ -76,7 +76,6 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
                   ),
                   const SizedBox(height: 12),
 
-                  // Tags Row
                   Row(
                     children: [
                       Container(
@@ -149,7 +148,6 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
                   ),
                   const SizedBox(height: 28),
 
-                  // Quantity Selector
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -192,7 +190,6 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
                   ),
                   const SizedBox(height: 32),
 
-                  // Add to Cart Button
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton.icon(

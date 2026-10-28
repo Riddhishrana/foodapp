@@ -53,7 +53,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               const SizedBox(height: 16),
 
-              // Preset Avatars Selection
               const Text(
                 'Select Pre-designed Avatar:',
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
@@ -70,7 +69,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               const Divider(height: 32),
 
-              // Pick from device gallery/camera
               ListTile(
                 leading: const CircleAvatar(
                   backgroundColor: Colors.deepOrange,
@@ -104,7 +102,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               const SizedBox(height: 8),
 
-              // Custom Image URL Option
               const Text(
                 'Or Paste Image Web URL:',
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
@@ -248,7 +245,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     } else if (imagePath.startsWith('assets/')) {
       return Image.asset(imagePath, fit: BoxFit.cover);
     } else {
-      // Local File path
       return Image.asset('assets/images/default_avatar.png', fit: BoxFit.cover);
     }
   }
@@ -298,7 +294,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
-            // Dynamic Profile Image Header
             Center(
               child: Stack(
                 children: [
@@ -359,7 +354,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             const SizedBox(height: 12),
 
-            // Member Badge
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
               decoration: BoxDecoration(
@@ -384,7 +378,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             const SizedBox(height: 24),
 
-            // Statistics Row
             Card(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
               child: Padding(
@@ -403,7 +396,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             const SizedBox(height: 24),
 
-            // User Details List Section
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
@@ -451,7 +443,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             const SizedBox(height: 24),
 
-            // Quick Actions
             SizedBox(
               width: double.infinity,
               child: OutlinedButton.icon(

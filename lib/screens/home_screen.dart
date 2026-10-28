@@ -19,14 +19,12 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
-            // Top App Bar & Header
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // User Greeting Row
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -67,7 +65,6 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
 
-                        // Dynamic Profile Thumbnail
                         Container(
                           width: 48,
                           height: 48,
@@ -83,7 +80,6 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
 
-                    // Search Field
                     TextField(
                       onChanged: (val) => foodProvider.setSearchQuery(val),
                       decoration: InputDecoration(
@@ -104,7 +100,6 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
 
-                    // Promotional Offer Card
                     Container(
                       width: double.infinity,
                       padding: const EdgeInsets.all(20),
@@ -167,7 +162,6 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 24),
 
-                    // Category Chips
                     const Text(
                       'Categories',
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -211,7 +205,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            // Food Grid items
             foodProvider.filteredFoodItems.isEmpty
                 ? const SliverFillRemaining(
                     child: Center(

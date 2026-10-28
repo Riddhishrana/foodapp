@@ -114,7 +114,6 @@ class OrdersScreen extends StatelessWidget {
                   ),
                   const Divider(height: 20),
 
-                  // Order items list preview
                   Column(
                     children: order.items.map((cartItem) {
                       return Padding(
@@ -174,7 +173,6 @@ class OrdersScreen extends StatelessWidget {
                           ],
                           OutlinedButton.icon(
                             onPressed: () {
-                              // Reorder items
                               for (var item in order.items) {
                                 foodProvider.addToCart(item.foodItem, quantity: item.quantity);
                               }
